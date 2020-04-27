@@ -55,7 +55,7 @@ namespace WhoExtras
 				? players.Select(p => string.Format("{0} (IX: {1}){2}",
 					namer(p),
 					p.Index,
-					p.User != null ? $" (ID: {p.User.ID})" : string.Empty
+					p.Account != null ? $" (ID: {p.Account.ID})" : string.Empty
 				))
 				: players.Select(p => namer(p));
 		}
